@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Snippet - GoSNippets</title>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+<style>
+body {
+    background: #FF512F;
+
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+}
+
+.btc-accordion {
+    padding-top: 100px;
+}
+
+.btc-accordion .card {
+    cursor: pointer;
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btc-accordion .card a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.accordion-icon[aria-expanded="false"] .fa-angle-down {
+    transform: rotate(0deg);
+}
+
+.accordion-icon[aria-expanded="true"] .fa-angle-down {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}</style>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+<script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+</head>
+<body oncontextmenu='return false' class='snippet-body'>
+<section class="btc-accordion">
+    <!-- Container -->
+    <div class="container">
+        <h1 class="text-center text-white">Bootstrap 4 Accordion</h1>
+        <p class="text-center text-white">A Bootstrap 4 accordion with chevron up and down </p>
+        <hr> <br>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="accordion mb-2" id="accordionExample">
+                    <!-- Collapse one -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <a class="accordion-icon" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h5 class="py-2"> Collapsible Group Item #1 <span class="float-right"><i class="fas fa-angle-down"></i></span></h5>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Full Name</th>
+                                            <th>Age</th>
+                                            <th>Job Title</th>
+                                            <th>City</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Vincent Williamson</td>
+                                            <td>31</td>
+                                            <td>iOS Developer</td>
+                                            <td>Sinaai-Waas</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Taylor Reyes</td>
+                                            <td>22</td>
+                                            <td>UI/UX Developer</td>
+                                            <td>Baileux</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Justin Block</td>
+                                            <td>26</td>
+                                            <td>Frontend Developer</td>
+                                            <td>Overland Park</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Sean Guzman</td>
+                                            <td>26</td>
+                                            <td>Web Designer</td>
+                                            <td>Gloucester</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Keith Carter</td>
+                                            <td>20</td>
+                                            <td>Graphic Designer</td>
+                                            <td>Oud-Turnhout</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Collapse one -->
+
+                    <!-- Collapse Two -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <a class="accordion-icon" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 class="py-2"> Collapsible Group Item #2 <span class="float-right"><i class="fas fa-angle-down"></i></span></h5>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Full Name</th>
+                                            <th>Age</th>
+                                            <th>Job Title</th>
+                                            <th>City</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Vincent Williamson</td>
+                                            <td>31</td>
+                                            <td>iOS Developer</td>
+                                            <td>Sinaai-Waas</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Taylor Reyes</td>
+                                            <td>22</td>
+                                            <td>UI/UX Developer</td>
+                                            <td>Baileux</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Justin Block</td>
+                                            <td>26</td>
+                                            <td>Frontend Developer</td>
+                                            <td>Overland Park</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Sean Guzman</td>
+                                            <td>26</td>
+                                            <td>Web Designer</td>
+                                            <td>Gloucester</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Keith Carter</td>
+                                            <td>20</td>
+                                            <td>Graphic Designer</td>
+                                            <td>Oud-Turnhout</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Collapse Two -->
+
+                    <!-- Collapse Three -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <a class="accordion-icon" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h5 class="py-2">Collapsible Group Item #3 <span class="float-right"><i class="fas fa-angle-down"></i></span></h5>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Full Name</th>
+                                            <th>Age</th>
+                                            <th>Job Title</th>
+                                            <th>City</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Vincent Williamson</td>
+                                            <td>31</td>
+                                            <td>iOS Developer</td>
+                                            <td>Sinaai-Waas</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Taylor Reyes</td>
+                                            <td>22</td>
+                                            <td>UI/UX Developer</td>
+                                            <td>Baileux</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Justin Block</td>
+                                            <td>26</td>
+                                            <td>Frontend Developer</td>
+                                            <td>Overland Park</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Sean Guzman</td>
+                                            <td>26</td>
+                                            <td>Web Designer</td>
+                                            <td>Gloucester</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Keith Carter</td>
+                                            <td>20</td>
+                                            <td>Graphic Designer</td>
+                                            <td>Oud-Turnhout</td>
+                                            <td>
+                                                <ul class="action-list">
+                                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Collapse Three -->
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<script type='text/javascript'></script>
+</body>
+</html>
